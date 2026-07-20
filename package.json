@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": false,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "dev": "next dev",
+    "lint:prettier": "prettier --write .",
     "lint": "eslint",
-    "lint:prettier": "prettier --write ."
+    "prepare": "husky",
+    "start": "next start"
   },
   "dependencies": {
     "next": "16.2.10",
@@ -23,6 +24,8 @@
     "eslint-config-next": "16.2.10",
     "eslint-config-prettier": "10.1.8",
     "eslint": "9.39.5",
+    "husky": "9.1.7",
+    "lint-staged": "17.1.0",
     "prettier": "3.9.5",
     "typescript": "5.9.3"
   }

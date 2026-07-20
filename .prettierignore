@@ -1,0 +1,9 @@
+# Ignore 3rd party files
+node_modules/
+
+# generated files
+pnpm-lock.yaml
+.next/
+
+# pnpm using `pnpm config` is particular about the formatting of its workspace file
+pnpm-workspace.yaml
