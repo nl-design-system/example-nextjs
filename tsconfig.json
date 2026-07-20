@@ -2,11 +2,7 @@
   "extends": "@nl-design-system/tsconfig",
   "compilerOptions": {
     "allowSyntheticDefaultImports": true, // depricated and will stop functioning in v7. Added to overwrite usage in @nl-design-system/tsconfig
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": false, // was true, don't think this is needed.
     "noEmit": true, // gives room for other compiler tools
     "module": "esnext", // overwrite NodeNext because this is a Frontend project
@@ -19,20 +15,9 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./*"
-      ]
-    },
+      "@/*": ["./*"]
+    }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/dev/types/**/*.ts", "**/*.mts"],
+  "exclude": ["node_modules"]
 }
